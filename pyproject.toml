@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "poetry-dep-demo"
+version = "0.1.0"
+description = "Sample package to demonstrate poetry behavior"
+authors = ["James Truxon"]
+readme = "README.md"
+packages = [{include = "poetry_dep_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
